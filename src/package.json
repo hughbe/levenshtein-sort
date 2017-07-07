@@ -1,0 +1,29 @@
+{
+  "name": "levenshtein-sort",
+  "version": "1.0.0",
+  "description": "A sort function for string arrays based on Levenshtein distance.",
+  "main": "./build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughbe/levenshtein-sort.git"
+  },
+  "keywords": [
+    "levenshtein",
+    "sort",
+    "string sort"
+  ],
+  "author": "Hugh Bellamy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughbe/levenshtein-sort/issues"
+  },
+  "homepage": "https://github.com/hughbe/levenshtein-sort#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "build": "babel lib --presets env --out-dir build",
+    "prepublish": "npm run build"
+  }
+}
